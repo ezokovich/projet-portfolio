@@ -74,7 +74,6 @@ border-radius: 5px;
     position: absolute;
     left: 50%;
     bottom: 2;
-    transform: translatex(-50%);
     transition:bottom 1s, left 1s;
 }
 
