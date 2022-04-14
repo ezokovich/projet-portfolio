@@ -6,8 +6,9 @@
 .hero {
     position: relative;
     width: 100%;
-    height: 100%;
-    background-image: url(bg.png)
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-position: 100% ;
 } 
 nav{
     display: flex;
@@ -27,10 +28,10 @@ nav ul li a{
     text-decoration:none;
     color: azure;
     font-weight: bold;
-
 }
 nav ul li a:hover{
-    color: chartreuse;
+    color: rgb(228, 6, 6);
+
 }
 .dete1{
     margin-left: 8%;
@@ -74,10 +75,11 @@ border-radius: 5px;
     position: absolute;
     left: 50%;
     bottom: 2;
-    transform: translatex(-50%);
-    transition:bottom 1s, left 1s;
+    border-radius: 5%;
+
+    /* transition:bottom 1s, left 1s; */
 }
 
- .images:hover .me{
-     left: 45%;
- }
+ /* .images:hover .me{ */
+     /* left: 45%; */
+ /* } */
