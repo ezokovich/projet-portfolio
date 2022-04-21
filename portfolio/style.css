@@ -1,7 +1,8 @@
 *{
  margin: 0;
  padding: 0;
- font-family: sans-serif;  
+ font-family: 'josefin sans',sans-serif;
+ scroll-behavior: smooth;  
 }
 .hero {
     position: relative;
@@ -92,6 +93,30 @@ transform: scale(1.1)
     bottom: 2;
     border-radius: 6%;
 }
+/* ==================== reseaux sociaux ===================*/
+.block-reseau{
+width: 5%;
+height: 250px;
+border: 1.5px solid black ;
+border-radius: 50px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+margin: auto;
+position: fixed;
+right:5px;
+top:10%;
+}
+.block-icon{
+    height: 60px;
+    text-align: center;
+    font-size: 19px;
+    margin: 9px;
+    color:  goldenrod;
+    cursor: pointer;
+}
+.fa-twitter{
+    color: #00adef;
+}
+
 /*===================================== section about ==========================================*/
 .about{
     width: 100%;
@@ -293,3 +318,86 @@ button:hover{
   .boss{
       background: #000;
   }
+  /*=============================================== contact me==================================================*/
+  .contact{
+   width: 100%;
+   height: 290px;
+  background: #191919;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact p{
+color: wheat;
+font-size: 30px;
+font-weight: bold;
+margin-bottom: 25px;
+}
+.contact .button{
+    background:orange;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition:.4s;
+    color: black;
+}
+.contact .button:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+}
+/* ================================================== FOOTER ===================================*/
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color:101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: wheat;
+    mask-border: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: wheat;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50px;
+    margin: 22px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .2s;   
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition:.3s; 
+}
+.social a i{
+    color: white;
+}
+.finish{
+    position: absolute;
+    color: rgb(119, 29, 13) ;
+    bottom:  35px;
+    font-size: 14px;
+}
