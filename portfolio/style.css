@@ -6,7 +6,8 @@
 }
 .hero {
     position: relative;
-    width: 100%;
+    width: 100%; 
+    height:100vh;
     background-image: url(bg.png);
     background-repeat: no-repeat;
     background-position: 100% ;
@@ -36,8 +37,8 @@ nav ul li a{
 nav ul li a:hover{
     color: rgb(228, 6, 6);
     padding: 10px 20px;
-    margin: 3px;
-    border-radius: 30px;
+    margin: 1px;
+    border-radius: 25px;
     border: 2px solid;
     border-color: white;
     background-color: rgb(215, 241, 240);
@@ -95,31 +96,42 @@ transform: scale(1.1)
 }
 /* ==================== reseaux sociaux ===================*/
 .block-reseau{
-width: 5%;
+width: 3.5%;
 height: 250px;
-border: 1.5px solid black ;
+border: 2px solid rgba(51, 111, 243, 0.842) ;
 border-radius: 50px;
 box-shadow: 0 1px 4px rgba(0,0,0,0.25);
 margin: auto;
 position: fixed;
 right:5px;
-top:10%;
+top:40%;
+z-index: 1;
 }
 .block-icon{
     height: 60px;
     text-align: center;
     font-size: 19px;
     margin: 9px;
-    color:  goldenrod;
+    color:  rgb(218, 160, 14);
     cursor: pointer;
 }
 .fa-twitter{
     color: #00adef;
 }
+ .fa-instagram{
+    color:  rgb(218, 160, 14); 
+ } 
+.fa-linkedin-in{
+    color: rgb(218, 160, 14) ;
+}
+.fa-facebook-f{
+    color: rgb(218, 160, 14);
+}
 
 /*===================================== section about ==========================================*/
 .about{
     width: 100%;
+    background-color: teal;
 }
 .about img{
     height: 550px;
@@ -159,6 +171,7 @@ button{
     border-radius: 30px;
     transition:.4s;
     color: black;
+    font-size: 15px;
 }
  .text{
     margin-top: 10%;
@@ -171,7 +184,7 @@ button:hover{
  .about img h5 p{
      padding: 5px;
  } 
- /* ============ service ===========*/
+ /* ============================================================================== service =========================================*/
  .service{
      background:wheat;
      width: 100%;
@@ -207,7 +220,7 @@ button:hover{
      text-align: center;
      text-align: center;
      margin:25px 0px;
-     color:  rebeccapurple;
+     color:  rgb(213, 196, 230);
 
  }
  .txt p{
@@ -216,6 +229,28 @@ button:hover{
      line-height: 27px;
      margin-bottom: 25px;
 
+ }
+ h5{
+     color: cornsilk;
+     font-size: 24px;
+     margin-bottom: 15px;
+ }
+ .txt .button{
+    background:orange;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 20px;
+    border-radius: 30px;
+    transition:.4s;
+    color:white;
+    font-size: 15px
+ }
+ .txt .button:hover{
+     background-color: transparent;
+     border: 2px solid orange;
+     cursor: pointer;
+     color: white;
  }
  /*============================================================== skills & projet=================================================*/
  .skills{
@@ -231,6 +266,7 @@ button:hover{
   }
   .skills h3{
       margin: 5px;
+      position: relative;
   }
   .skills li{
       margin: 20px 0;
@@ -264,16 +300,23 @@ button:hover{
       animation: css 3s;
   }
     .php{
-      width: 85%;
+      width: 87%;
       animation: php 3s;
   }
     .javascript{
-      width: 93%;
+      width: 97%;
       animation: javascript 3s;
   }
     .MySQL{
-      width: 87%;
+      width: 93%;
       animation: MySQL 3s;
+  }
+    .skills .pourcentage{
+     list-style:4px;
+     position: sticky;
+     padding-left: 90%;
+     color: rgb(150, 75, 5);
+     margin-top: -22px;
   }
   @keyframes html{
       0%{
@@ -304,7 +347,7 @@ button:hover{
           width: 0%;
       }
       100%{
-          width: 93%;
+          width: 97%;
       }
   }
    @keyframes MySQL{
@@ -312,12 +355,23 @@ button:hover{
           width: 0%;
       }
       100%{
-          width: 87%;
+          width: 93%;
       }
   }
   .boss{
       background: #000;
   }
+  /*================================================= projet======================================*/
+.projet{
+    background:wheat;
+    width: 100%;
+    page-break-after: 100px 0px;
+    border: 3px red;
+
+}
+
+
+
   /*=============================================== contact me==================================================*/
   .contact{
    width: 100%;
@@ -353,7 +407,7 @@ footer{
     position: relative;
     width: 100%;
     height: 400px;
-    background-color:101010;
+    background-color:#101010;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -397,7 +451,7 @@ footer p:nth-child(2){
 }
 .finish{
     position: absolute;
-    color: rgb(119, 29, 13) ;
+    color: rgba(237, 243, 243, 0.788) ;
     bottom:  35px;
     font-size: 14px;
 }
