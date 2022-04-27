@@ -4,14 +4,15 @@
  font-family: 'josefin sans',sans-serif;
  scroll-behavior: smooth;  
 }
-/* @font-face {
-    font-family:mirthful_children;
-    src: url(/Users/imacg1/Desktop/portfolio/projet-portfolio/portfolio/mirthful_children/Mirthful\ Children.ttf);
-} */
+html{
+    position: relative;
+}
+body{
+    width: 1000px;
+}
 .hero {
     position: relative;
     width: 100%; 
-    height:100v;
     background-image: url("../img/bgg.png");
     background-repeat: no-repeat;
     background-position: 100% ;
@@ -370,7 +371,6 @@ button:hover{
     background:rgb(58, 41, 11);
     width: 100%;
     page-break-after: 100px 0px;
-    border: 3px red;
     height:400px;
 }
 
@@ -378,7 +378,6 @@ button:hover{
     width: 100%;
     text-align: center;
     height:50px;
-    border: 3px solid;
 }
 .bos1{
 border: 2px solid;
@@ -418,7 +417,10 @@ cursor: pointer;
    margin-left :2px;
    display: flex;
 }
-
+.defile{
+   text-align: center;
+   bottom: 0; 
+}
   /*=============================================== contact me==================================================*/
   .contact{
    width: 100%;
@@ -501,4 +503,25 @@ footer p:nth-child(2){
     color: rgba(237, 243, 243, 0.788) ;
     bottom:  35px;
     font-size: 14px;
+}
+/*========================================================responsiviter===========================*/
+@media screen and (max-width:480px){
+    .block-reseau{
+        display: none;
+    }
+  header{
+      width:100% ;
+      size: 70%;
+  }
+  body{
+      width: 480px 100%;
+      font-size: 80%;
+      size: 70%;
+       height: 600px;
+  }
+  .images img{
+    position: relative;
+    left: -10px;
+  }
+     
 }
