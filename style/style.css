@@ -202,6 +202,10 @@ button:hover{
      text-align: center ;
      padding-top: 10px;
  }
+ .title h2{
+     background: white;
+     margin-top: -10px;
+ }
  .box{
      display: flex;
      justify-content: center;
@@ -260,7 +264,7 @@ button:hover{
  /*============================================================== skills & projet=================================================*/
  .skills{
      width: 500px;
-     margin: 60px auto;
+     margin: 10px auto;
      color: indianred;
      padding: 20px;
      box-shadow: 0 14px 25px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
