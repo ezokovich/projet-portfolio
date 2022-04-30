@@ -3,8 +3,6 @@
  padding: 0;
  font-family: 'josefin sans',sans-serif;
  scroll-behavior: smooth; 
- box-sizing: content-box;
- border: 1px solid salmon; 
 }
 html{
     position: relative;
@@ -24,6 +22,7 @@ nav{
     padding: 23px 0;
     align-items: center;
     justify-content: space-between;
+    padding-left: 25px;width: 94%;
 }
 nav ul li{
     display: inline-block;
@@ -134,7 +133,8 @@ z-index: 1;
 /*===================================== section about ==========================================*/
 .about{
     width: 100%;
-    background-color: teal;
+    background-color: rgb(3, 73, 73);
+    color: white;
 }
 .about img{
     height: 550px;
@@ -191,7 +191,8 @@ button:hover{
  } 
  /* ============================================================================== service =========================================*/
  .service{
-     background:wheat;
+     background:rgb(32, 22, 3);
+     background-repeat: no-repeat;
      width: 100%;
      page-break-after: 100px 0px;
 
@@ -269,7 +270,7 @@ button:hover{
      color: indianred;
      padding: 20px;
      box-shadow: 0 14px 25px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
-     background:rgb(241, 252, 251);
+     background:rgb(241, 245, 252);
     } 
  .skills h1{
       text-align: center;   
@@ -382,6 +383,7 @@ button:hover{
     width: 100%;
     text-align: center;
     height:50px;
+    font-size: 30px;
 }
 .bos1{
 border: 2px solid;
@@ -424,6 +426,8 @@ cursor: pointer;
 .defile{
    text-align: center;
    bottom: 0; 
+   padding: 17px;
+   color: whitesmoke;
 }
   /*=============================================== contact me==================================================*/
   .contact{
@@ -602,6 +606,9 @@ nav{
     margin-left: 40%;
     padding-bottom: 15px;
 }
+.logo{
+    display: none;
+}
 }
 
 @media screen and (max-width:500px){
@@ -618,10 +625,36 @@ nav{
     }
     nav{
         display: grid;
+        padding-left: 10px;
     }
     .logo{
+        display: none;
         margin-left: 40%;
         padding-bottom: 15px;
+        margin-left: 15%;
+        margin-bottom: 13px;
 
+    }
+    .icon{
+        width:260px;
+    }
+    .bos1 img{
+        margin-left: 0px;
+    }
+    .about img{
+        height: 500px;
+    }
+    .dete1{
+        margin-top: 0%;
+    }
+    .dete1 a{
+        margin-left: 95px;
+    }
+    .dete1 p{
+        color: rgb(184, 171, 169);
+        font-size: 15.9px;
+    }
+    .contact p{
+        text-align: center;
     }
 }
