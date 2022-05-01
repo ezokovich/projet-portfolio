@@ -23,6 +23,10 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding-left: 25px;width: 94%;
+    font-size: 16px;
+}
+nav ul{
+    margin-top: -10px;
 }
 nav ul li{
     display: inline-block;
@@ -45,6 +49,9 @@ nav ul li a:hover{
     border-color: white;
     background-color: rgb(215, 241, 240);
     
+}
+.logo{
+    margin-top: -20px;
 }
 .dete1{ 
     margin-left: 2%;
@@ -98,7 +105,7 @@ transform: scale(1.1)
 }
 /* ==================== reseaux sociaux ===================*/
 .block-reseau{
-width: 3.5%;
+width:50px;
 height: 250px;
 border: 2px solid rgba(51, 111, 243, 0.842) ;
 border-radius: 50px;
@@ -321,6 +328,10 @@ button:hover{
       width: 93%;
       animation: MySQL 3s;
   }
+   .Git{
+      width: 99%;
+      animation: Git 3s;
+  }
     .skills .pourcentage{
      list-style:4px;
      position: sticky;
@@ -367,13 +378,23 @@ button:hover{
       100%{
           width: 93%;
       }
+      
+  }
+  @keyframes Git{
+      0%{
+          width: 0%;
+      }
+      100%{
+          width: 99%;
+      }
+      
   }
   .boss{
       background: #000;
   }
   /*================================================= projet======================================*/
 .projet{
-    background:rgb(58, 41, 11);
+    background:rgb(15, 11, 3);
     width: 100%;
     page-break-after: 100px 0px;
     height:400px;
@@ -384,9 +405,9 @@ button:hover{
     text-align: center;
     height:50px;
     font-size: 30px;
+    color: white;
 }
 .bos1{
-border: 2px solid;
 width: 32%;
 height: 300px;
 float: left; 
@@ -397,7 +418,6 @@ height: 300px;
 cursor: pointer;
 }
 .bos2{
-border: 2px solid;
 width: 32%;
 height: 300px;
 float: right;
@@ -409,7 +429,6 @@ cursor: pointer;
 
 }
 .bos3{
-border: 2px solid;
 width: 32%;
 height: 300px;
 float: right;
@@ -522,6 +541,9 @@ footer p:nth-child(2){
   header{
       width:100% ;
   }
+  nav{
+    font-size: 20px;
+}
   .block-reseau{
     display: none;
 }
@@ -567,6 +589,7 @@ footer p:nth-child(2){
 }
 .master{
     display: grid;
+    margin-left: 16%;
 }
 .bos{
     width: 100%;
@@ -589,6 +612,9 @@ footer p:nth-child(2){
     border-left-width: 0px;
     padding-left: 0px
 }
+.bos2 img{
+    width: 84%;
+}
 .bos3{
     border-right-width: 0px;
     padding-right: 0px;
@@ -609,9 +635,13 @@ nav{
 .logo{
     display: none;
 }
+.defile{
+    text-align: left;
 }
 
-@media screen and (max-width:500px){
+}
+
+@media screen and (max-width:520px){
     .principal{
         display:grid;
         width: 80%; 
@@ -638,6 +668,38 @@ nav{
     .icon{
         width:260px;
     }
+    .master{
+        display: grid;
+        margin-left: 0%;
+    }
+    .bos{
+        width: 100%;
+        padding: 5px;
+    }
+    .bos1{
+        border-right-width: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        border-left-width: 0px;
+        padding-left: 0px
+    }
+    .bos2{
+        border-right-width: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        border-left-width: 0px;
+        padding-left: 0px
+    }
+    .bos2 img{
+        width: 100%;
+    }
+    .bos3{
+        border-right-width: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        border-left-width: 0px;
+        padding-left: 0px
+    }
     .bos1 img{
         margin-left: 0px;
     }
@@ -656,5 +718,13 @@ nav{
     }
     .contact p{
         text-align: center;
+    }
+    nav{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:1300px){
+    .block-reseau{
+        width:60px;
     }
 }
