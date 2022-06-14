@@ -18,7 +18,7 @@ html{
 nav{
     display: flex;
     width:84%;
-    margin:  2%;
+    margin:  2%;     
     padding: 23px 0;
     align-items: center;
     justify-content: space-between;
@@ -399,7 +399,10 @@ button:hover{
     page-break-after: 100px 0px;
     height:400px;
 }
-
+.master{
+    display: flex;
+    justify-content: space-around;
+}
 .enfant{
     width: 100%;
     text-align: center;
@@ -407,10 +410,11 @@ button:hover{
     font-size: 30px;
     color: white;
 }
+
 .bos1{
 width: 32%;
 height: 300px;
-float: left; 
+/* float: left;  */
 }
 .bos1 img{
 width:100%;
@@ -420,7 +424,7 @@ cursor: pointer;
 .bos2{
 width: 32%;
 height: 300px;
-float: right;
+/* float: right; */
 }
 .bos2 img{
 width:100%;
@@ -431,7 +435,7 @@ cursor: pointer;
 .bos3{
 width: 32%;
 height: 300px;
-float: right;
+/* float: right; */
 }
 .bos3 img{
 width:100%;
@@ -445,8 +449,7 @@ cursor: pointer;
 .defile{
    text-align: center;
    bottom: 0; 
-   padding: 17px;
-   color: whitesmoke;
+   padding: 1px;
 }
   /*=============================================== contact me==================================================*/
   .contact{
@@ -726,5 +729,13 @@ nav{
 @media screen and (min-width:1300px){
     .block-reseau{
         width:60px;
+    }
+}
+@media screen and (min-width:1300px){
+    .master{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px auto ;
+        padding-left:160px;
     }
 }
